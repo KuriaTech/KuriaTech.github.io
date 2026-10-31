@@ -1,7 +1,7 @@
 const year = document.querySelector("#year");
 if (year) year.textContent = new Date().getFullYear();
 
-const revealTargets = document.querySelectorAll(".section-heading, .work-card, .about-copy, .contact > *");
+const revealTargets = document.querySelectorAll(".section-heading, .work-card, .process-card, .about-copy, .faq-item, .contact > *");
 revealTargets.forEach((target) => target.classList.add("reveal"));
 
 if ("IntersectionObserver" in window) {
