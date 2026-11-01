@@ -12,62 +12,78 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css" />
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css?v=2.1" />
+    <script src="script.js?v=2.1" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
     <header class="topbar">
-      <a class="brand-logo" href="#top" aria-label="Kuria home"><img src="assets/logo.png" alt="AI & Tech Kuria" /></a>
-      <nav aria-label="Main navigation">
-        <a href="#work">Selected work</a>
-        <a href="#services">Services</a>
-        <a href="#about">About</a>
-        <a class="nav-contact" href="#contact">Let’s collaborate <span aria-hidden="true">↗</span></a>
-      </nav>
+      <div class="topbar-inner">
+        <a class="brand-logo" href="#top" aria-label="Kuria home"><img src="assets/logo.png" alt="AI & Tech Kuria" /></a>
+        <nav class="nav-menu" id="primary-nav" aria-label="Main navigation">
+          <a class="nav-link" href="#work">Selected work</a>
+          <a class="nav-link" href="#services">Services</a>
+          <a class="nav-link" href="#about">About</a>
+          <a class="nav-contact" href="#contact">Let’s collaborate <span aria-hidden="true">↗</span></a>
+          <div class="nav-drawer-extra">
+            <span class="nav-drawer-label">DIRECT CONTACT</span>
+            <a class="nav-drawer-link" href="https://x.com/I_amShiti" target="_blank" rel="noreferrer">X / @I_amShiti ↗</a>
+            <a class="nav-drawer-link" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=ai.kuriachronicles%40gmail.com&amp;su=Collaboration%20inquiry" target="_blank" rel="noreferrer">ai.kuriachronicles@gmail.com ↗</a>
+          </div>
+        </nav>
+        <button class="nav-toggle" type="button" aria-controls="primary-nav" aria-expanded="false" aria-label="Toggle navigation menu">
+          <span class="nav-toggle-icon" aria-hidden="true">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </span>
+        </button>
+      </div>
     </header>
 
     <main id="main">
       <section class="hero" id="top" aria-labelledby="hero-title">
-        <div class="hero-copy">
-          <p class="eyebrow"><span class="status-dot"></span> AI & TECH CONTENT CREATOR</p>
-          <h1 id="hero-title">AI,<br /><em>made</em> visible<span class="period">.</span></h1>
-          <div class="hero-bottom">
-            <p class="hero-intro">I create scroll-stopping content for AI &amp; tech brands—product demos, GenAI, tutorials, and campaigns.</p>
-            <a class="round-link" href="#work" aria-label="Explore selected work"><span>↓</span></a>
+        <div class="hero-inner">
+          <div class="hero-copy">
+            <p class="eyebrow"><span class="status-dot"></span> AI &amp; TECH CONTENT CREATOR</p>
+            <h1 id="hero-title">AI,<br /><em>made</em> visible<span class="period">.</span></h1>
+            <div class="hero-bottom">
+              <p class="hero-intro">I create scroll-stopping content for AI &amp; tech brands—product demos, GenAI, tutorials, and campaigns.</p>
+              <a class="round-link" href="#work" aria-label="Explore selected work"><span>↓</span></a>
+            </div>
           </div>
+          <div class="hero-art" aria-label="Animated AI neural network with connected nodes and data signals over a blue digital horizon">
+            <div class="art-index">FIELD NOTE 001<br />GEN·AI / 2026</div>
+            <div class="sun"></div>
+            <div class="orbit orbit-one"></div>
+            <div class="orbit orbit-two"></div>
+            <div class="wave wave-back"></div>
+            <div class="wave wave-front"></div>
+            <svg class="neural-network" viewBox="0 0 500 500" preserveAspectRatio="none" aria-hidden="true">
+              <g class="network-links">
+                <path d="M54 178 145 126 238 181 339 103 438 160" />
+                <path d="M54 178 142 267 238 181 318 279 438 160" />
+                <path d="M142 267 87 375 214 365 318 279 402 380" />
+                <path d="M238 181 214 365M339 103 318 279M145 126 142 267M438 160 402 380" />
+              </g>
+              <g class="network-nodes">
+                <circle cx="54" cy="178" r="6" /><circle cx="145" cy="126" r="5" />
+                <circle cx="238" cy="181" r="8" /><circle cx="339" cy="103" r="5" />
+                <circle cx="438" cy="160" r="6" /><circle cx="142" cy="267" r="6" />
+                <circle cx="318" cy="279" r="7" /><circle cx="87" cy="375" r="5" />
+                <circle cx="214" cy="365" r="6" /><circle cx="402" cy="380" r="5" />
+              </g>
+              <g class="data-packets">
+                <circle r="4"><animateMotion dur="4.8s" repeatCount="indefinite" path="M54 178 145 126 238 181 339 103 438 160" /></circle>
+                <circle r="3"><animateMotion dur="5.6s" begin="-2.2s" repeatCount="indefinite" path="M54 178 142 267 318 279 402 380" /></circle>
+                <circle r="3"><animateMotion dur="4.3s" begin="-1.4s" repeatCount="indefinite" path="M339 103 318 279 214 365 87 375" /></circle>
+              </g>
+            </svg>
+            <div class="art-caption"><span>CREATIVE INTELLIGENCE</span><span>01—04</span></div>
+            <span class="art-cross cross-one">+</span><span class="art-cross cross-two">+</span>
+          </div>
+          <div class="hero-index"><span>AI &amp; TECH CREATOR</span><span class="hero-index-center">PRODUCT DEMOS · GENAI · TUTORIALS · CAMPAIGNS</span><span>SCROLL TO EXPLORE ↓</span></div>
         </div>
-        <div class="hero-art" aria-label="Animated AI neural network with connected nodes and data signals over a blue digital horizon">
-          <div class="art-index">FIELD NOTE 001<br />GEN·AI / 2026</div>
-          <div class="sun"></div>
-          <div class="orbit orbit-one"></div>
-          <div class="orbit orbit-two"></div>
-          <div class="wave wave-back"></div>
-          <div class="wave wave-front"></div>
-          <svg class="neural-network" viewBox="0 0 500 500" preserveAspectRatio="none" aria-hidden="true">
-            <g class="network-links">
-              <path d="M54 178 145 126 238 181 339 103 438 160" />
-              <path d="M54 178 142 267 238 181 318 279 438 160" />
-              <path d="M142 267 87 375 214 365 318 279 402 380" />
-              <path d="M238 181 214 365M339 103 318 279M145 126 142 267M438 160 402 380" />
-            </g>
-            <g class="network-nodes">
-              <circle cx="54" cy="178" r="6" /><circle cx="145" cy="126" r="5" />
-              <circle cx="238" cy="181" r="8" /><circle cx="339" cy="103" r="5" />
-              <circle cx="438" cy="160" r="6" /><circle cx="142" cy="267" r="6" />
-              <circle cx="318" cy="279" r="7" /><circle cx="87" cy="375" r="5" />
-              <circle cx="214" cy="365" r="6" /><circle cx="402" cy="380" r="5" />
-            </g>
-            <g class="data-packets">
-              <circle r="4"><animateMotion dur="4.8s" repeatCount="indefinite" path="M54 178 145 126 238 181 339 103 438 160" /></circle>
-              <circle r="3"><animateMotion dur="5.6s" begin="-2.2s" repeatCount="indefinite" path="M54 178 142 267 318 279 402 380" /></circle>
-              <circle r="3"><animateMotion dur="4.3s" begin="-1.4s" repeatCount="indefinite" path="M339 103 318 279 214 365 87 375" /></circle>
-            </g>
-          </svg>
-          <div class="art-caption"><span>CREATIVE INTELLIGENCE</span><span>01—04</span></div>
-          <span class="art-cross cross-one">+</span><span class="art-cross cross-two">+</span>
-        </div>
-        <div class="hero-index"><span>AI &amp; TECH CREATOR</span><span>PRODUCT DEMOS · GENAI · TUTORIALS · CAMPAIGNS</span><span>SCROLL TO EXPLORE ↓</span></div>
       </section>
 
       <section class="ticker" aria-label="Areas of focus">
@@ -75,74 +91,103 @@
       </section>
 
       <section class="work section-wrap" id="work" aria-labelledby="work-title">
-        <div class="section-heading">
-          <div><p class="eyebrow">WHAT I CREATE</p><h2 id="work-title">Ideas that<br /><span>stop the scroll.</span></h2></div>
-          <p class="section-note">Clear, visual content that helps audiences understand what AI and tech products can do—and makes them want to try.</p>
+        <div class="work-inner">
+          <div class="section-heading">
+            <div><p class="eyebrow">WHAT I CREATE</p><h2 id="work-title">Ideas that<br /><span>stop the scroll.</span></h2></div>
+            <p class="section-note">Clear, visual content that helps audiences understand what AI and tech products can do—and makes them want to try.</p>
+          </div>
+          <div class="work-grid">
+            <a class="work-card card-feature" href="https://x.com/I_amShiti" target="_blank" rel="noreferrer" aria-label="Explore AI video experiments on X">
+              <div class="card-art video-art"><span class="card-label">01 / AI VIDEO</span><div class="frame-stack"><div class="frame frame-a"></div><div class="frame frame-b"></div><div class="frame frame-c"><span>MAKE<br />A SCENE</span></div></div><span class="play-mark">↗</span></div>
+              <div class="card-meta"><div><h3>Product demos</h3><p>Show the product in action and make the value click fast.</p><span class="platform-label">EXPLORE ON X <b>↗</b></span></div><span class="card-arrow">↗</span></div>
+            </a>
+            <a class="work-card" href="https://x.com/I_amShiti" target="_blank" rel="noreferrer" aria-label="Explore image and design experiments on X">
+              <div class="card-art image-art"><span class="card-label">02 / IMAGE MAKING</span><div class="image-window"><div class="image-sphere"></div><div class="image-disc"></div><span>IDEA<br />→ IMAGE</span></div><span class="image-spark">✳</span></div>
+              <div class="card-meta"><div><h3>GenAI &amp; tutorials</h3><p>Useful workflows and creative experiments, made easy to follow.</p><span class="platform-label">EXPLORE ON X <b>↗</b></span></div><span class="card-arrow">↗</span></div>
+            </a>
+            <a class="work-card" href="https://x.com/I_amShiti" target="_blank" rel="noreferrer" aria-label="Explore creator tool reviews and workflows on X">
+              <div class="card-art tools-art"><span class="card-label">03 / TOOL NOTES</span><div class="tool-sheet"><span class="sheet-kicker">THE CREATOR’S SHORTLIST</span><strong>Less hype.<br />More <i>making.</i></strong><span class="sheet-line"></span><span class="sheet-foot">TOOLS · WORKFLOWS · NOTES</span></div><span class="tools-stamp">TESTED<br />IN THE<br />WILD</span></div>
+              <div class="card-meta"><div><h3>Brand campaigns</h3><p>Creator-led storytelling built around your product and audience.</p><span class="platform-label">EXPLORE ON X <b>↗</b></span></div><span class="card-arrow">↗</span></div>
+            </a>
+          </div>
+          <div class="work-cta">
+            <a class="text-link x-profile-link" href="https://x.com/I_amShiti" target="_blank" rel="noreferrer">See the latest on X <span>↗</span></a>
+          </div>
         </div>
-        <div class="work-grid">
-          <a class="work-card card-feature" href="https://x.com/I_amShiti" target="_blank" rel="noreferrer" aria-label="Explore AI video experiments on X">
-            <div class="card-art video-art"><span class="card-label">01 / AI VIDEO</span><div class="frame-stack"><div class="frame frame-a"></div><div class="frame frame-b"></div><div class="frame frame-c"><span>MAKE<br />A SCENE</span></div></div><span class="play-mark">↗</span></div>
-            <div class="card-meta"><div><h3>Product demos</h3><p>Show the product in action and make the value click fast.</p><span class="platform-label">EXPLORE ON X <b>↗</b></span></div><span class="card-arrow">↗</span></div>
-          </a>
-          <a class="work-card" href="https://x.com/I_amShiti" target="_blank" rel="noreferrer" aria-label="Explore image and design experiments on X">
-            <div class="card-art image-art"><span class="card-label">02 / IMAGE MAKING</span><div class="image-window"><div class="image-sphere"></div><div class="image-disc"></div><span>IDEA<br />→ IMAGE</span></div><span class="image-spark">✳</span></div>
-            <div class="card-meta"><div><h3>GenAI &amp; tutorials</h3><p>Useful workflows and creative experiments, made easy to follow.</p><span class="platform-label">EXPLORE ON X <b>↗</b></span></div><span class="card-arrow">↗</span></div>
-          </a>
-          <a class="work-card" href="https://x.com/I_amShiti" target="_blank" rel="noreferrer" aria-label="Explore creator tool reviews and workflows on X">
-            <div class="card-art tools-art"><span class="card-label">03 / TOOL NOTES</span><div class="tool-sheet"><span class="sheet-kicker">THE CREATOR’S SHORTLIST</span><strong>Less hype.<br />More <i>making.</i></strong><span class="sheet-line"></span><span class="sheet-foot">TOOLS · WORKFLOWS · NOTES</span></div><span class="tools-stamp">TESTED<br />IN THE<br />WILD</span></div>
-            <div class="card-meta"><div><h3>Brand campaigns</h3><p>Creator-led storytelling built around your product and audience.</p><span class="platform-label">EXPLORE ON X <b>↗</b></span></div><span class="card-arrow">↗</span></div>
-          </a>
-        </div>
-        <a class="text-link x-profile-link" href="https://x.com/I_amShiti" target="_blank" rel="noreferrer">See the latest on X <span>↗</span></a>
       </section>
 
       <section class="services" id="services" aria-labelledby="services-title">
-        <div class="services-heading">
-          <div><p class="eyebrow">WAYS WE CAN WORK TOGETHER</p><h2 id="services-title">Content that<br /><em>moves people.</em></h2></div>
-          <p>From a first look at a new tool to a full creator campaign, I make tech feel clear, useful, and worth sharing.</p>
+        <div class="services-inner">
+          <div class="services-heading">
+            <div><p class="eyebrow">WAYS WE CAN WORK TOGETHER</p><h2 id="services-title">Content that<br /><em>moves people.</em></h2></div>
+            <p>From a first look at a new tool to a full creator campaign, I make tech feel clear, useful, and worth sharing.</p>
+          </div>
+          <div class="service-list">
+            <article class="service-item"><span class="service-number">01</span><div><h3>Product demos</h3><p>Show your product in action with a sharp, scroll-stopping walkthrough.</p></div><span class="service-symbol">↗</span></article>
+            <article class="service-item"><span class="service-number">02</span><div><h3>GenAI content</h3><p>Creative experiments that reveal what your AI tool can make possible.</p></div><span class="service-symbol">✳</span></article>
+            <article class="service-item"><span class="service-number">03</span><div><h3>Tutorials</h3><p>Break useful workflows into simple steps your audience can follow.</p></div><span class="service-symbol">⌁</span></article>
+            <article class="service-item"><span class="service-number">04</span><div><h3>Brand campaigns</h3><p>Creator-led stories tailored to your product, launch, and audience.</p></div><span class="service-symbol">◎</span></article>
+          </div>
+          <a class="service-cta" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=ai.kuriachronicles%40gmail.com&amp;su=Collaboration%20inquiry" target="_blank" rel="noreferrer">Have a campaign in mind? <span>Email me ↗</span></a>
         </div>
-        <div class="service-list">
-          <article class="service-item"><span class="service-number">01</span><div><h3>Product demos</h3><p>Show your product in action with a sharp, scroll-stopping walkthrough.</p></div><span class="service-symbol">↗</span></article>
-          <article class="service-item"><span class="service-number">02</span><div><h3>GenAI content</h3><p>Creative experiments that reveal what your AI tool can make possible.</p></div><span class="service-symbol">✳</span></article>
-          <article class="service-item"><span class="service-number">03</span><div><h3>Tutorials</h3><p>Break useful workflows into simple steps your audience can follow.</p></div><span class="service-symbol">⌁</span></article>
-          <article class="service-item"><span class="service-number">04</span><div><h3>Brand campaigns</h3><p>Creator-led stories tailored to your product, launch, and audience.</p></div><span class="service-symbol">◎</span></article>
-        </div>
-        <a class="service-cta" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=ai.kuriachronicles%40gmail.com&amp;su=Collaboration%20inquiry" target="_blank" rel="noreferrer">Have a campaign in mind? <span>Email me ↗</span></a>
       </section>
 
       <section class="process section-wrap" id="process" aria-labelledby="process-title">
-        <div class="process-heading"><div><p class="eyebrow">SIMPLE FROM THE START</p><h2 id="process-title">Good work starts<br />with a <em>good brief.</em></h2></div><p>Clear goals, thoughtful creative, and content built around what your audience needs to see.</p></div>
-        <div class="process-grid">
-          <article class="process-card"><span class="process-index">01 / ALIGN</span><div class="process-icon brief-icon">✳</div><h3>Share the brief</h3><p>Tell me about the product, audience, campaign goal, and the story you want people to remember.</p></article>
-          <article class="process-card"><span class="process-index">02 / CREATE</span><div class="process-icon create-icon">↗</div><h3>Shape the idea</h3><p>We agree on a creative direction, then I turn the product into a clear, engaging piece of content.</p></article>
-          <article class="process-card"><span class="process-index">03 / DELIVER</span><div class="process-icon deliver-icon">◎</div><h3>Ready to share</h3><p>Receive the finished content in the format and with the posting details agreed for the campaign.</p></article>
+        <div class="process-inner">
+          <div class="process-heading"><div><p class="eyebrow">SIMPLE FROM THE START</p><h2 id="process-title">Good work starts<br />with a <em>good brief.</em></h2></div><p>Clear goals, thoughtful creative, and content built around what your audience needs to see.</p></div>
+          <div class="process-grid">
+            <article class="process-card"><span class="process-index">01 / ALIGN</span><div class="process-icon brief-icon">✳</div><h3>Share the brief</h3><p>Tell me about the product, audience, campaign goal, and the story you want people to remember.</p></article>
+            <article class="process-card"><span class="process-index">02 / CREATE</span><div class="process-icon create-icon">↗</div><h3>Shape the idea</h3><p>We agree on a creative direction, then I turn the product into a clear, engaging piece of content.</p></article>
+            <article class="process-card"><span class="process-index">03 / DELIVER</span><div class="process-icon deliver-icon">◎</div><h3>Ready to share</h3><p>Receive the finished content in the format and with the posting details agreed for the campaign.</p></article>
+          </div>
         </div>
       </section>
 
       <section class="about" id="about" aria-labelledby="about-title">
-        <div class="about-mark"><img src="assets/PtFecw86_400x400.jpg" alt="Kuria smiling in a neon AI themed portrait" /><span>KURIA · AI CREATOR</span></div>
-        <div class="about-copy"><p class="eyebrow">KURIA · AI &amp; TECH CREATOR</p><h2 id="about-title">Make it useful.<br />Make it <em>unmissable.</em></h2><p class="about-text">I create scroll-stopping content for AI and tech brands: product demos, GenAI experiments, tutorials, and campaigns that turn new technology into stories people want to watch and share.</p><p class="about-text">Currently creating with <strong>Hailuo AI</strong> and <strong>Flova AI</strong>.</p><a class="text-link x-profile-link" href="https://x.com/I_amShiti" target="_blank" rel="noreferrer">Follow along on X <span>↗</span></a></div>
-        <div class="about-side-note">STAY CURIOUS<br />MAKE SOMETHING<br />UNEXPECTED.</div>
+        <div class="about-inner">
+          <div class="about-mark"><img src="assets/PtFecw86_400x400.jpg" alt="Kuria smiling in a neon AI themed portrait" /><span>KURIA · AI CREATOR</span></div>
+          <div class="about-copy"><p class="eyebrow">KURIA · AI &amp; TECH CREATOR</p><h2 id="about-title">Make it useful.<br />Make it <em>unmissable.</em></h2><p class="about-text">I create scroll-stopping content for AI and tech brands: product demos, GenAI experiments, tutorials, and campaigns that turn new technology into stories people want to watch and share.</p><p class="about-text">Currently creating with <strong>Hailuo AI</strong> and <strong>Flova AI</strong>.</p><a class="text-link x-profile-link" href="https://x.com/I_amShiti" target="_blank" rel="noreferrer">Follow along on X <span>↗</span></a></div>
+          <div class="about-side-note">STAY CURIOUS<br />MAKE SOMETHING<br />UNEXPECTED.</div>
+        </div>
       </section>
 
       <section class="faq section-wrap" aria-labelledby="faq-title">
-        <div class="faq-heading"><p class="eyebrow">A FEW QUICK ANSWERS</p><h2 id="faq-title">Good to<br /><em>know.</em></h2></div>
-        <div class="faq-list">
-          <details class="faq-item"><summary>What kind of content do you create?<span>+</span></summary><p>Product demos, GenAI content, tutorials, and creator-led campaigns for AI and tech brands.</p></details>
-          <details class="faq-item"><summary>How do we start a collaboration?<span>+</span></summary><p>Email me with your product, campaign goal, audience, and any timing or deliverable details you already have.</p></details>
-          <details class="faq-item"><summary>Can you create content for a launch or campaign?<span>+</span></summary><p>Yes. Share the launch or campaign brief and we can discuss the right content format and scope.</p></details>
+        <div class="faq-inner">
+          <div class="faq-heading"><p class="eyebrow">A FEW QUICK ANSWERS</p><h2 id="faq-title">Good to<br /><em>know.</em></h2></div>
+          <div class="faq-list">
+            <details class="faq-item"><summary>What kind of content do you create?<span>+</span></summary><p>Product demos, GenAI content, tutorials, and creator-led campaigns for AI and tech brands.</p></details>
+            <details class="faq-item"><summary>How do we start a collaboration?<span>+</span></summary><p>Email me with your product, campaign goal, audience, and any timing or deliverable details you already have.</p></details>
+            <details class="faq-item"><summary>Can you create content for a launch or campaign?<span>+</span></summary><p>Yes. Share the launch or campaign brief and we can discuss the right content format and scope.</p></details>
+          </div>
         </div>
       </section>
 
       <section class="contact section-wrap" id="contact" aria-labelledby="contact-title">
-        <div class="contact-sticker">OPEN<br />FOR<br />COLLABS <span>↘</span></div>
-        <p class="eyebrow">HAVE A GOOD IDEA?</p>
-        <h2 id="contact-title">Let’s make<br /><em>it visible.</em></h2>
-        <a class="contact-button" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=ai.kuriachronicles%40gmail.com&amp;su=Collaboration%20inquiry" target="_blank" rel="noreferrer">Email for collabs <span>↗</span></a>
-        <img class="contact-banner" src="assets/600x200.jpeg" alt="AI & Tech Kuria — DM for collaboration" loading="lazy" />
+        <div class="contact-inner">
+          <div class="contact-content">
+            <div class="contact-sticker" aria-hidden="true">OPEN<br />FOR<br />COLLABS <span>↘</span></div>
+            <p class="eyebrow">HAVE A GOOD IDEA?</p>
+            <h2 id="contact-title">Let’s make<br /><em>it visible.</em></h2>
+            <a class="contact-button" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=ai.kuriachronicles%40gmail.com&amp;su=Collaboration%20inquiry" target="_blank" rel="noreferrer">Email for collabs <span>↗</span></a>
+          </div>
+          <div class="contact-media">
+            <img class="contact-banner" src="assets/600x200.jpeg" alt="AI & Tech Kuria — DM for collaboration" loading="lazy" />
+          </div>
+        </div>
       </section>
     </main>
 
-    <footer class="footer"><a class="brand-logo footer-logo" href="#top" aria-label="Kuria home"><img src="assets/logo.png" alt="AI & Tech Kuria" /></a><span>© <span id="year">2026</span> KURIA · MADE WITH CURIOSITY</span><a class="footer-x" href="https://x.com/I_amShiti" target="_blank" rel="noreferrer">X / @I_amShiti ↗</a><a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=ai.kuriachronicles%40gmail.com&amp;su=Collaboration%20inquiry" target="_blank" rel="noreferrer">ai.kuriachronicles@gmail.com ↗</a></footer>
+    <footer class="footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a class="brand-logo footer-logo" href="#top" aria-label="Kuria home"><img src="assets/logo.png" alt="AI & Tech Kuria" /></a>
+          <span class="footer-copy">© <span id="year">2026</span> KURIA · MADE WITH CURIOSITY</span>
+        </div>
+        <div class="footer-links">
+          <a class="footer-link footer-x" href="https://x.com/I_amShiti" target="_blank" rel="noreferrer">X / @I_amShiti ↗</a>
+          <a class="footer-link footer-email" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=ai.kuriachronicles%40gmail.com&amp;su=Collaboration%20inquiry" target="_blank" rel="noreferrer">ai.kuriachronicles@gmail.com ↗</a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
